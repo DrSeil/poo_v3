@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Pokemon Info</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+      <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <div id="moveable">
+      <div id="pokeball-container">
+        <img id="pokeball-image" src=".\static-pokeball.png" style="display: block;">
+        <img id="pokeball-gif" src=".\pokeball.gif" style="display: none;">
+        <p id="pokeball-text">
+          If the pokeball is moving, you are eligible to be the trainer in GPB vs Chat Ironmon. If the pokeball isn't moving, either chat or gift/renew your subscription to GPB to become eligible. Click and drag the pokeball to move the extension.  Click this message to hide the text.
+        </p>
+      </div>
+      <div class="primary">
+        <div class="title">
+          <div class="pokemon">
+            <h1 id="name" class="name"></h1>
+            <div id="types">
+              <div id="type0" class='type-icon'></div> 
+              <div id="type1" class='type-icon'></div> 
+            </div>
+          </div>
+          <div class="health">
+            HP: <span class="current-health"></span> / <span class="max-health"></span>
+          </div>
+        </div>
+        <div class="ability">
+          <span id="ability"> </span>
+        </div>
+        <div id="stats" class="row">
+          <div class= "column">
+            <div class="column-stat">
+              HP
+            </div>
+            <div class="column-value">
+              <span class="max-health"></span>
+            </div>
+            <div class="column-stat">
+              ATK
+            </div>
+            <div class="column-value">
+              <span class="attack"></span>
+            </div>
+            <div class="column-stat">
+              DEF
+            </div>
+            <div class="column-value">
+              <span class="defense"></span>
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-stat">
+              SPA
+            </div>
+            <div class="column-value">
+              <span class="special-attack"></span>
+            </div>
+            <div class="column-stat">
+              SPD
+            </div>
+            <div class="column-value">
+              <span class="special-defense"></span>
+            </div>
+            <div class="column-stat">
+              SPE
+            </div>
+            <div class="column-value">
+              <span class="speed"></span>
+            </div>
+          </div>
+        </div>
+        <div id="moves">
+          <div class="grid-container">
+            <button class="button" id="move0">
+              <div class="move" >
+                <div id="move0-category" class="move-category"></div>
+                <div class="move-details">
+                  <div class="move-name">
+                    <span id="move0-name"></span>
+                  </div>
+                  <div class="move-type">
+                    <p id="move0-type" class='type-icon'></p>
+                  </div>
+                  <div class="move-details">
+                    POW: <span id="move0-power" class="power"></span>
+                    PP: <span id="move0-pp" class="pp"></span>
+                  </div>  
+                </div>
+              </div>
+            </button>
+            <button class="button" id="move1">
+              <div class="move" >
+                <div id="move1-category" class="move-category"></div>
+                <div class="move-details">
+                  <div class="move-name">
+                    <span id="move1-name"></span>
+                  </div>
+                  <div class="move-type">
+                    <p id="move1-type" class='type-icon'></p>
+                  </div>
+                  <div class="move-details">
+                    POW: <span id="move1-power" class="power"></span>
+                    PP: <span id="move1-pp" class="pp"></span>
+                  </div>  
+                </div>
+              </div>
+            </button>
+            <button class="button" id="move2">
+              <div class="move" >
+                <div id="move2-category" class="move-category"></div>
+                <div class="move-details">
+                  <div class="move-name">
+                    <span id="move2-name"></span>
+                  </div>
+                  <div class="move-type">
+                    <p id="move2-type" class='type-icon'></p>
+                  </div>
+                  <div class="move-details">
+                    POW: <span id="move2-power" class="power"></span>
+                    PP: <span id="move2-pp" class="pp"></span>
+                  </div>  
+                </div>
+              </div>
+            </button>
+            <button class="button" id="move3" >
+              <div class="move" >
+                <div id="move3-category" class="move-category"></div>
+                <div class="move-details">
+                  <div class="move-name">
+                    <span id="move3-name"></span>
+                  </div>
+                  <div class="move-type">
+                    <p id="move3-type" class='type-icon'></p>
+                  </div>
+                  <div class="move-details">
+                    POW: <span id="move3-power" class="power"></span>
+                    PP: <span id="move3-pp" class="pp"></span>
+                  </div>  
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+    
+    <div id="waiting" class="waiting">
+      <img src=".\loading-loading-forever.gif" />
+      <h3>Waiting for input from game</h3>
+    </div>
+  </div>
+
+    <script type="text/javascript" src="./script.ts"></script>
+  </body>
+</html>
+

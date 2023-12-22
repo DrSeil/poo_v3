@@ -1,0 +1,302 @@
+body {
+
+  font-family: 'Fira Sans', sans-serif;
+  text-shadow: 2px 0 5px #fff, -2px 0 5px #fff, 0 2px 5px #fff, 0 -2px 5px #fff,
+  1px 1px 5px #fff, -1px -1px 5px #fff, 1px -1px 5px #fff, -1px 1px 5px #fff;
+  /* width: 350px; */
+  /*height: 350px;*/
+}
+
+#moveable {
+
+
+
+  position: absolute;
+}
+
+.primary {
+  background-color: rgba(255,255,255,.5);
+  backdrop-filter: blur(10px); 
+  width: 300px;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  align-items:baseline;
+}
+
+.pokemon {
+  justify-self: start;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+}
+
+.health {
+  justify-self: end;
+}
+
+.ability {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: auto 30px;
+  column-gap: 10px;
+}
+
+.column-stat {
+    justify-self: start;
+}
+
+.column-value {
+    justify-self: end;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 0px 10px 0px;
+    background-color: #a5ffa8;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.move {
+  display: grid;
+  grid-template-columns: 30px auto;
+  gap: 3px;
+  align-items: center;
+}
+
+img {
+  height: 15px
+}
+
+
+.type-icon{
+  font-family: 'Fira Sans', sans-serif;
+  background: #ccc;
+  background-image: -webkit-linear-gradient(#ddd, #bbb);
+  background-image: linear-gradient(#ddd, #bbb);
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #333;
+  text-transform: uppercase;
+}
+
+.type-icon:hover,
+.type-icon:active,
+.type-icon:focus{
+  color: #fff;
+  text-decoration: none
+}
+
+.type-icon:link:hover,
+.type-icon:link:active,
+.type-icon:link:focus {
+  opacity: 0.85
+}
+
+.type-icon {
+  display: inline-block;
+  width: 54px;
+  line-height: 1;
+  margin: 1px 0;
+  padding: 3px 0
+}
+
+.type-normal {
+  background: #8a8a59;
+  background-image: -webkit-linear-gradient(#a8a878, #8a8a59);
+  background-image: linear-gradient(#a8a878, #8a8a59);
+  border-color: #79794e
+}
+
+.type-fire {
+  background: #f08030;
+  background-image: -webkit-linear-gradient(#f08030, #dd6610);
+  background-image: linear-gradient(#f08030, #dd6610);
+  border-color: #b4530d
+}
+
+.type-water {
+  background: #6890f0;
+  background-image: -webkit-linear-gradient(#6890f0, #386ceb);
+  background-image: linear-gradient(#6890f0, #386ceb);
+  border-color: #1753e3
+}
+
+.type-electric {
+  background: #f8d030;
+  background-image: -webkit-linear-gradient(#f8d030, #f0c108);
+  background-image: linear-gradient(#f8d030, #f0c108);
+  border-color: #c19b07
+}
+
+.type-grass {
+  background: #78c850;
+  background-image: -webkit-linear-gradient(#78c850, #5ca935);
+  background-image: linear-gradient(#78c850, #5ca935);
+  border-color: #4a892b
+}
+
+.type-ice {
+  background: #98d8d8;
+  background-image: -webkit-linear-gradient(#98d8d8, #69c6c6);
+  background-image: linear-gradient(#98d8d8, #69c6c6);
+  border-color: #45b6b6
+}
+
+.type-fighting {
+  background: #c03028;
+  background-image: -webkit-linear-gradient(#c03028, #9d2721);
+  background-image: linear-gradient(#c03028, #9d2721);
+  border-color: #82211b
+}
+
+.type-poison {
+  background: #a040a0;
+  background-image: -webkit-linear-gradient(#a040a0, #803380);
+  background-image: linear-gradient(#a040a0, #803380);
+  border-color: #662966
+}
+
+.type-ground {
+  background: #e0c068;
+  background-image: -webkit-linear-gradient(#e0c068, #d4a82f);
+  background-image: linear-gradient(#e0c068, #d4a82f);
+  border-color: #aa8623
+}
+
+.type-flying {
+  background: #a890f0;
+  background-image: -webkit-linear-gradient(#a890f0, #9180c4);
+  background-image: linear-gradient(#a890f0, #9180c4);
+  border-color: #7762b6
+}
+
+.type-psychic {
+  background: #f85888;
+  background-image: -webkit-linear-gradient(#f85888, #f61c5d);
+  background-image: linear-gradient(#f85888, #f61c5d);
+  border-color: #d60945
+}
+
+.type-bug {
+  background: #a8b820;
+  background-image: -webkit-linear-gradient(#a8b820, #8d9a1b);
+  background-image: linear-gradient(#a8b820, #8d9a1b);
+  border-color: #616b13
+}
+
+.type-rock {
+  background: #b8a038;
+  background-image: -webkit-linear-gradient(#b8a038, #93802d);
+  background-image: linear-gradient(#b8a038, #93802d);
+  border-color: #746523
+}
+
+.type-ghost {
+  background: #705898;
+  background-image: -webkit-linear-gradient(#705898, #554374);
+  background-image: linear-gradient(#705898, #554374);
+  border-color: #413359
+}
+
+.type-dragon {
+  background: #7038f8;
+  background-image: -webkit-linear-gradient(#7038f8, #4c08ef);
+  background-image: linear-gradient(#7038f8, #4c08ef);
+  border-color: #3d07c0
+}
+
+.type-steel {
+  background: #b8b8d0;
+  background-image: -webkit-linear-gradient(#b8b8d0, #9797ba);
+  background-image: linear-gradient(#b8b8d0, #9797ba);
+  border-color: #7a7aa7
+}
+
+.type-dark {
+  background: #705848;
+  background-image: -webkit-linear-gradient(#705848, #513f34);
+  background-image: linear-gradient(#705848, #513f34);
+  border-color: #362a23
+}
+
+.type-fairy {
+  background: #e898e8;
+  background-image: -webkit-linear-gradient(#e898e8, #de6ede);
+  background-image: linear-gradient(#e898e8, #de6ede);
+  border-color: #d547d5
+}
+
+.type-curse {
+  background: #68a090;
+  background-image: -webkit-linear-gradient(#68a090, #4e7c6f);
+  background-image: linear-gradient(#68a090, #4e7c6f);
+  border-color: #41685d
+}
+
+.waiting {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+#pokeball-container {
+  position: relative;
+  text-align: center;
+}
+
+#pokeball-image {
+  width: 30px;
+  height: 30px;
+}
+
+#pokeball-gif{
+  width: 30px;
+  height: 30px;
+
+}
+
+#pokeball-text {
+  margin-top: 10px;
+  width:300px;
+  background-color: rgba(255,255,255,.5);
+  backdrop-filter: blur(10px); 
+}
